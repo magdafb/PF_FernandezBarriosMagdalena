@@ -1,0 +1,755 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo&family=Baskervville:ital@0;1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+main{
+    min-height: 100vh;
+    
+}
+
+/*---------HEADER------------*/
+
+#header{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    position: relative;
+    width: auto;
+    padding: 5px 10%;
+    margin: 0;
+    padding: 0;
+    min-width:auto;
+}
+#header .logo{
+    cursor: pointer;
+}
+
+#header .logo img{
+    height: 150px;
+    width: 100%;
+    margin: 10px;
+}
+
+.nav-links{
+    list-style: none;
+}
+
+.nav-links li{
+    display: inline-block;
+    padding: 0 20px;
+    text-transform:uppercase;
+
+}
+.nav-links li a{
+    text-decoration: none;
+    color: rgb(3, 3, 3);
+    font-size: 12px;
+}
+
+.nav-links li a:hover{
+    color: rgb(247, 194, 212);
+}
+/*---------FIN DEL HEADER------------*/
+
+/*---------INICIO------------*/
+.homepage{
+    height: 100vh;
+    background-image: url(/Images/ourbride.jpg);
+    background-size:cover;
+    background-position: center;
+    opacity: 70%;
+    margin: auto;
+}
+
+.homepage button{
+    cursor: pointer;
+    display: inline-block;
+    color: rgb(3, 3, 3);
+    padding: 15px 15px;
+    border: none;
+    text-align: center;
+    font-size: 13px;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 4px 2px;
+    transition: 0.4s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 5%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    opacity: 55%;
+}
+
+.homepage button:hover{
+    background-color:rgb(247, 194, 212) ;
+    opacity: 90%;
+}
+/*---------HISTORIA------------*/
+#historia{
+    padding: 80px 0px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px 10%;
+}
+.historia-col1{
+    flex-basis: 35%;
+}
+.historia-img{
+    width: 100%;
+}
+
+.historia-col2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    flex-basis: 60%;
+    margin: auto;
+}
+.subtitulo{
+    font-family: 'Baskervville', serif;
+    font-style: italic;
+    font-size: 30px;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 30px;
+    padding-left: 30px;
+    justify-self: left;
+    
+}
+p{
+    font-family: 'Arimo', sans-serif;
+    font-size: 15px;
+    text-align: left;
+    margin: 0;
+    text-align: justify;
+    line-height: 1.6;
+    padding-left: 30px;
+}
+
+.container-button{
+    display: flex;
+    width: auto;
+    margin-top: 30px;
+    padding-left: 30px;
+}
+
+.historia-button{
+    
+    cursor: pointer;
+    color: rgb(3, 3, 3);
+    padding: 15px 15px;
+    border: none;
+    text-align: center;
+    font-size: 13px;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 4px 2px;
+    transition: 0.4s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 5%;
+    opacity: 55%;
+    align-items: end;
+    
+}
+.historia-col2 .historia-button:hover{
+    background-color:rgb(247, 194, 212) ;
+    opacity: 90%;
+}
+/*---------SERVICIOS------------*/
+#servicios{
+    padding: 80px 0px;
+}
+.titulo-servicios{
+    font-family: 'Baskervville', serif;
+    font-style: italic;
+    font-size: 30px;
+    text-align: center;
+    margin: 0;
+    line-height: 1.6;
+    align-items: center;
+    position: relative;
+}
+.subtitulo-servicios{
+    font-family: 'Arimo', sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.contenido-servicios{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    
+}
+
+.servicio1 img{
+    width: 340px;
+    height: 292px;
+    flex-shrink: 0;
+    border-radius: 8%;
+
+}
+.servicio2 img{
+    width: 340px;
+    height: 292px;
+    flex-shrink: 0;
+    border-radius: 8%;
+
+}
+
+.text-serv1{
+    position: absolute;
+    width: 340px;
+    height: 110px;
+    border-bottom-left-radius: 8%;
+    border-bottom-right-radius: 8%;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    margin: auto;
+    
+    
+}
+.text-serv2{
+    position: absolute;
+    width: 340px;
+    height: 110px;
+    border-bottom-left-radius: 8%;
+    border-bottom-right-radius: 8%;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    margin: auto;
+}
+.text-serv1 h3{
+    font-family: 'Baskervville', serif;
+    font-style: italic;
+    font-size: 17px;
+    text-align: center;
+    padding-top: 10px;
+}
+.text-serv2 h3{
+    font-family: 'Baskervville', serif;
+    font-style: italic;
+    font-size: 17px;
+    text-align: center;
+    padding-top: 10px;
+}
+.text-serv1 p{
+    font-family: 'Arimo', sans-serif;
+    font-size: 12px;
+    font-style: italic;
+    text-align: center;
+    justify-content: center;
+    padding: 20px; 
+}
+.text-serv2 p{ 
+    font-family: 'Arimo', sans-serif;
+    font-size: 12px;
+    font-style: italic;
+    text-align: center;
+    justify-content: center;
+    padding: 20px; 
+    
+}
+.contenido-servicios .servicio1:hover{
+    background-color: #fff;
+    opacity: 80%;
+    cursor: pointer;
+    transition: 0.1s;
+    width: 340px;
+    height: 292px;
+    border-radius: 8%;
+    
+}
+
+.contenido-servicios .servicio2:hover .text-serv2{
+    opacity: 1;
+    transform: translateY(-110px);
+    -webkit-transform: translateY(-110px);
+    transition: 1s;
+}
+.contenido-servicios .servicio2:hover{
+    background-color: #fff;
+    opacity: 80%;
+    cursor: pointer;
+    transition: 0.1s;
+    width: 340px;
+    height: 292px;
+    border-radius: 8%;
+    
+}
+
+.contenido-servicios .servicio1:hover .text-serv1{
+    opacity: 1;
+    transform: translateY(-110px);
+    -webkit-transform: translateY(-110px);
+    transition: 1s;
+}
+
+.botonserv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding-top: 80px;
+    width: 800px;
+}
+
+.botonserv .servicios-button{
+    cursor: pointer;
+    color: rgb(3, 3, 3);
+    padding: 15px 15px;
+    border: none;
+    text-align: center;
+    font-size: 13px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.4s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 5%;
+    opacity: 55%;
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 440px;
+    margin: auto;
+
+}
+.botonserv .servicios-button:hover{
+    background-color:rgb(247, 194, 212) ;
+    opacity: 90%;
+}
+
+/*---------NOVIAS-----------*/
+
+#novias{
+    padding: 80px 0px;
+    
+}
+.titulo-novias{
+    font-family: 'Baskervville', serif;
+    font-style: italic;
+    font-size: 30px;
+    text-align: center;
+    margin: 0;
+    line-height: 1.6;
+    align-items: center;
+    position: relative;
+}
+
+.contenido-novias{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding-top: 40px;
+    width:70%;
+    overflow: hidden;
+}
+
+.contenido-novias img{
+    width: 300px;
+    height: 350px;
+    padding: 5px;
+    gap: 5px;
+    object-fit:cover;
+    
+}
+.contenido-novias .novia1{
+    position: relative;
+}
+.text-block1{
+    position: absolute;
+    width: 300px;
+    height: 110px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    
+}
+.text-block1 h4{
+    font-family: 'Arimo', sans-serif;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center; 
+}
+.text-block1 p{
+    font-family: 'Arimo', sans-serif;
+    font-size: 12px;
+    font-style: italic;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;    
+}
+
+.contenido-novias .novia1:hover{
+    background-color: #fff;
+    opacity: 80%;
+    cursor: pointer;
+    transition: 0.6s;
+    width: 304px;
+    height: 354px;
+}
+
+.contenido-novias .novia1:hover .text-block1{
+    opacity: 1;
+    transform: translateY(-110px);
+    -webkit-transform: translateY(-110px);
+    transition: 1s;
+}
+
+
+.contenido-novias .novia2:hover{
+    background-color: #fff;
+    opacity: 80%;
+    cursor: pointer;
+    transition: 0.6s;
+    width: 304px;
+    height: 354px;
+}
+
+.contenido-novias .novia2:hover .text-block1{
+    opacity: 1;
+    transform: translateY(-110px);
+    -webkit-transform: translateY(-110px);
+    transition: 1s;
+}
+
+.contenido-novias .novia3:hover{
+    background-color: #fff;
+    opacity: 80%;
+    cursor: pointer;
+    transition: 0.6s;
+    width: 304px;
+    height: 354px;
+}
+
+.contenido-novias .novia3:hover .text-block1{
+    opacity: 1;
+    transform: translateY(-110px);
+    -webkit-transform: translateY(-110px);
+    transition: 1s;
+}
+
+.contenido-novias .novia4:hover{
+    background-color: #fff;
+    opacity: 80%;
+    cursor: pointer;
+    transition: 0.6s;
+    width: 304px;
+    height: 354px;
+}
+
+.contenido-novias .novia4:hover .text-block1{
+    opacity: 1;
+    transform: translateY(-110px);
+    -webkit-transform: translateY(-110px);
+    transition: 1s;
+}
+.contenido-novias .novia5:hover{
+    background-color: #fff;
+    opacity: 80%;
+    cursor: pointer;
+    transition: 0.6s;
+    width: 304px;
+    height: 354px;
+}
+
+.contenido-novias .novia5:hover .text-block1{
+    opacity: 1;
+    transform: translateY(-110px);
+    -webkit-transform: translateY(-110px);
+    transition: 1s;
+}
+.contenido-novias .novia6:hover{
+    background-color: #fff;
+    opacity: 80%;
+    cursor: pointer;
+    transition: 0.6s;
+    width: 304px;
+    height: 354px;
+}
+
+.contenido-novias .novia6:hover .text-block1{
+    opacity: 1;
+    transform: translateY(-110px);
+    -webkit-transform: translateY(-110px);
+    transition: 1s;
+}
+.contenido-novias .novia7:hover{
+    background-color: #fff;
+    opacity: 80%;
+    cursor: pointer;
+    transition: 0.6s;
+    width: 304px;
+    height: 354px;
+}
+
+.contenido-novias .novia7:hover .text-block1{
+    opacity: 1;
+    transform: translateY(-100px);
+    -webkit-transform: translateY(-100px);
+    transition: 1s;
+}
+.contenido-novias .novia8:hover{
+    background-color: #fff;
+    opacity: 80%;
+    cursor: pointer;
+    transition: 0.6s;
+    width: 304px;
+    height: 354px;
+}
+
+.contenido-novias .novia8:hover .text-block1{
+    opacity: 1;
+    transform: translateY(-110px);
+    -webkit-transform: translateY(-110px);
+    transition: 1s;
+}
+.contenido-novias .novia9:hover{
+    background-color: #fff;
+    opacity: 80%;
+    cursor: pointer;
+    transition: 0.6s;
+    width: 304px;
+    height: 354px;
+}
+
+.contenido-novias .novia9:hover .text-block1{
+    opacity: 1;
+    transform: translateY(-110px);
+    -webkit-transform: translateY(-110px);
+    transition: 1s;
+}
+
+
+/*---------CONTACTO-----------*/
+.titulo-contacto{
+    font-family: 'Baskervville', serif;
+    font-style: italic;
+    font-size: 30px;
+    text-align: center;
+    margin: 0;
+    line-height: 1.6;
+    align-items: center;
+    position: relative;
+    margin-top: 30px;
+}
+
+#contenido-contacto{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    
+}
+.texto-contacto{
+    font-family: 'Arimo', sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 2;
+    text-align: left;
+    justify-content: left;
+    text-transform: uppercase;
+    margin-left: 200px;
+}
+
+.fotoestudio{
+    width: 390px;
+    height: 290px;
+    border-radius: 5%;
+    margin-right: 200px;
+    margin-top: 30px;
+}
+
+.subtitulo-contacto{
+    font-family: 'Baskervville', serif;
+    font-style: italic;
+    font-size: 30px;
+    text-align: center;
+    margin: 0;
+    line-height: 1.6;
+    align-items: center;
+    position: relative;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.h3-contacto{
+    font-family: 'Arimo', sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 2;
+    text-align: center;
+    justify-content: center;
+    text-transform: uppercase;
+    
+}
+
+.contact-form{
+    width: 460px;
+    height: auto;
+    margin: 30px auto;
+    padding: 20px 0px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    
+}
+
+input{
+    background-color: rgb(247, 194, 212);
+    border-radius: 5%;
+    height: 30px;
+    width: 308px;
+    margin-top: 5px;  
+    padding-left: 10px;
+    margin-bottom: 5px;
+    font-family: 'Arimo', sans-serif;
+    font-size: 13px;
+    border: none;
+    opacity: 70%;
+}
+textarea{
+    background-color: rgb(247, 194, 212);
+    border-radius: 5%;
+    height: 80px;
+    width: 308px;
+    margin-top: 5px;  
+    padding-left: 10px;
+    margin-bottom: 5px;
+    font-family: 'Arimo', sans-serif;
+    font-size: 13px;
+    border: none;
+    padding-top: 10px;
+    opacity: 70%;
+}
+
+label{
+    font-family: 'Arimo', sans-serif;
+    font-size: 15px;
+    color: black;
+    font-weight: 300;
+}
+
+#enviar{
+    background-color: rgb(247, 194, 212);
+    width: 308px;
+    height: 30px;
+    font-family: 'Arimo', sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    border: none;
+    border-radius: 5%;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 10px 0 rgba(0,0,0,0.19);
+    cursor: pointer;
+    margin-left: 30px;
+    margin-top: 10px;
+    
+}
+#enviar:hover{
+    opacity: 50%;
+}
+
+.aviso{
+    font-family: 'Arimo', sans-serif;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+
+/*---------FOOTER------------*/
+.footer{
+    background-color: white;
+    height:auto;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    padding-top: 30px;
+    height: 30px;
+    margin-top: auto;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+h2{
+    font-family: 'Arimo', sans-serif;
+    font-size: 13px;
+    text-align: center;
+    justify-content: center;
+    font-style: normal;
+    font-weight: 400;
+}
+.redes i{
+    font-size: 20px;
+    margin: 10px;
+    color: black;
+    padding: 8px;
+    display: inline-block;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.redes i:hover{
+    font-size: 23px;
+    color: rgb(247, 194, 212);
+    transition: 0.3s;
+    opacity: 80%;
+}
+
+h3{
+    font-family: 'Arimo', sans-serif;
+    font-size: 12px;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-top: -5px;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+
+
