@@ -62,7 +62,7 @@ main{
 /*---------INICIO------------*/
 .homepage{
     height: 100vh;
-    background-image: url(./Images/ourbride.jpg);
+    background-image: url(../Images/ourbride.jpg);
     background-size:cover;
     background-position: center;
     opacity: 70%;
