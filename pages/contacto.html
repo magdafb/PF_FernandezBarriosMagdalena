@@ -40,66 +40,55 @@
 
 <!--------Comienza seccion contacto-------------------->
 <main>
-<h1 class="titulo-contacto">Contactanos</h1>
-<section id="contenido-contacto">
+    <h1 class="titulo-contacto">Contactanos</h1>
+    <section id="contenido-contacto" class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="texto-contacto"><b>Agendá tu entrevista:</b><br>
+                    • Teléfono: 099 123 456<br>
+                    • E-mail: aurastudionovias@gmail.com<br>
+                    • @aurastudionovias
+                </p>
+            </div>
+            <div class="col-md-6">
+                <img src="../Images/studio.jpg" class="fotoestudio">
+            </div>
+        </div>
+    </section>
+    <h2 class="subtitulo-contacto">¿Tenés dudas?</h2>
+    <h3 class="h3-contacto">Completá el siguiente formulario y nos contactaremos contigo</h3>
+    <div class="contact-form container">
+        <form>
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <!-- Adjusted the column width to col-md-8 and added offset-md-2 for centering -->
+                    <!-- Your form content here -->
+                    <div class="input-group">
+                        <label for="nombre" class="colocar-nombre">Nombre<span class="obligatorio">*</span></label>
+                        <input type="text" name="introducir-nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
 
-    <p class="texto-contacto"><b>Agendá tu entrevista:</b><br>
+                        <label for="apellido" class="colocar-apellido">Apellido<span class="obligatorio">*</span></label>
+                        <input type="text" name="introducir-apellido" id="apellido" required="obligatorio" placeholder="Escribe tu apellido">
 
-        
-        • Teléfono: 099 123 456<br>
-        
-        • E-mail: aurastudionovias@gmail.com<br>
-        
-        • @aurastudionovias</p>
+                        <label for="email" class="colocar-email">Email<span class="obligatorio">*</span></label>
+                        <input type="email" name="introducir-email" id="email" required="obligatorio" placeholder="Escribe tu E-mail">
 
-        <img src="../Images/studio.jpg" class="fotoestudio">
-</section>
-<h2 class="subtitulo-contacto">¿Tenés dudas?</h2>
-    <h3 class="h3-contacto">completá el siguiente formulario y nos contactaremos contigo</h3>
-<div class="contact-form">
-    
-<form>
-    <p>
-        <label for="nombre" class="colocar-nombre">Nombre<span class="obligatorio">*</span><br>
-            <input type="text" name="introducir-nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                        <label for="asunto" class="colocar-asunto">Asunto<span class="obligatorio">*</span></label>
+                        <input type="text" name="introducir-asunto" id="asunto" required="obligatorio" placeholder="Asunto">
 
-        </label>
-    </p>
-    <p>
-        <label for="apellido" class="colocar-apellido">Apellido<span class="obligatorio">*</span><br>
-            <input type="text" name="introducir-apellido" id="apellido" required="obligatorio" placeholder="Escribe tu apellido">
+                        <label for="mensaje" class="colocar-mensaje">Mensaje<span class="obligatorio">*</span></label>
+                        <textarea name="introducir-mensaje" class="texto-mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu mensaje..."></textarea>
 
-        </label>
-    </p>
+                        <button type="submit" name="enviar-formulario" id="enviar">Enviar</button>
 
-    <p>
-        <label for="email" class="colocar-email">Email<span class="obligatorio">*</span><br>
-            <input type="email" name="introducir-email" id="email" required="obligatorio" placeholder="Escribe tu E-mail">
-
-        </label>
-    </p>
-    <p>
-        <label for="asunto" class="colocar-asunto">Asunto<span class="obligatorio">*</span><br>
-            <input type="text" name="introducir-asunto" id="asunto" required="obligatorio" placeholder="Asunto">
-
-        </label>
-    </p>
-    <p>
-        <label for="mensaje" class="colocar-mensaje">Mensaje<span class="obligatorio">*</span><br>
-
-        </label> 
-        <textarea name="introducir-mensaje" class="texto-mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu mensaje..."></textarea> 
-    </p>
-    
-    <button type="submit" name="enviar-formulario" id="enviar">Enviar</button>
-    
-    <p class="aviso"> <span class="obligatorio"> * </span>Los campos son obligatorios.
-      </p> 
-
-</form>
-</div>
-
+                        <p class="aviso"><span class="obligatorio"> * </span>Los campos son obligatorios.</p>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
 </main>
+
 <!--------FOOTER------------------------------->
 <footer class="footer bg-light">
     <div class="container text-center">
