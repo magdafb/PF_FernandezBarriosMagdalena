@@ -544,8 +544,6 @@ p{
     transition: 1s;
 }
 
-
-/*---------CONTACTO-----------*/
 /*---------CONTACTO-----------*/
 .titulo-contacto {
     font-family: 'Baskervville', serif;
@@ -560,7 +558,7 @@ p{
 
 #contenido-contacto {
     display: flex;
-    align-items: center;
+    align-items: center !important;
     justify-content: center;
     flex-direction: column;
     gap: 20px;
@@ -612,7 +610,7 @@ p{
 
 .contact-form {
     width: 100%;
-    max-width: 800px; /* Adjusted max-width for a wider form */
+    max-width: 800px; 
     margin: 30px auto;
     padding: 20px;
     display: flex;
@@ -622,7 +620,7 @@ p{
 }
 
 .input-group {
-    width: 100%;
+    width: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
