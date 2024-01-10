@@ -198,11 +198,11 @@ p{
 
 .servicio1 img,
 .servicio2 img {
-    width: 100%; /* Adjusted to make images responsive */
-    max-width: 340px;
-    height: auto;
+    width: 340px;
+    height: 292px;
     border-radius: 8%;
 }
+
 
 .text-serv1,
 .text-serv2 {
