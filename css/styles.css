@@ -190,7 +190,7 @@ p{
 .contenido-servicios {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap; /* Adjusted this to wrap on smaller screens */
+    flex-wrap: wrap; 
     align-items: center;
     justify-content: center;
     gap: 20px;
@@ -203,11 +203,10 @@ p{
     border-radius: 8%;
 }
 
-
 .text-serv1,
 .text-serv2 {
     position: absolute;
-    width: 100%; /* Adjusted to make text responsive */
+    width: 340px; 
     height: 110px;
     border-bottom-left-radius: 8%;
     border-bottom-right-radius: 8%;
