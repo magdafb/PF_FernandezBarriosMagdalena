@@ -630,7 +630,7 @@ input, textarea {
     background-color: rgb(247, 194, 212);
     border-radius: 5px;
     height: 30px;
-    width: calc(100% - 20px);
+    width: calc(500px - 20px);
     margin-top: 5px;
     padding: 0 10px;
     margin-bottom: 15px;
