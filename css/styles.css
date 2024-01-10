@@ -165,10 +165,11 @@ p{
     opacity: 90%;
 }
 /*---------SERVICIOS------------*/
-#servicios{
+#servicios {
     padding: 80px 0px;
 }
-.titulo-servicios{
+
+.titulo-servicios {
     font-family: 'Baskervville', serif;
     font-style: italic;
     font-size: 30px;
@@ -178,130 +179,65 @@ p{
     align-items: center;
     position: relative;
 }
-.subtitulo-servicios{
+
+.subtitulo-servicios {
     font-family: 'Arimo', sans-serif;
     font-size: 17px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
-.contenido-servicios{
+
+.contenido-servicios {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 100px;
-    
+    gap: 20px;
 }
 
-.servicio1 img{
-    width: 340px;
-    height: 292px;
-    flex-shrink: 0;
+.servicio1 img,
+.servicio2 img {
+    width: 100%;
+    height: auto;
     border-radius: 8%;
-
-}
-.servicio2 img{
-    width: 340px;
-    height: 292px;
-    flex-shrink: 0;
-    border-radius: 8%;
-
 }
 
-.text-serv1{
-    position: absolute;
-    width: 340px;
-    height: 110px;
+.text-serv1,
+.text-serv2 {
+    width: 100%;
+    height: auto;
     border-bottom-left-radius: 8%;
     border-bottom-right-radius: 8%;
     background-color: white;
-    justify-content: center;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
     opacity: 0;
-    margin: auto;
-    
-    
+    margin-top: -110px;
+    position: relative;
+    transition: opacity 0.5s, transform 0.5s;
 }
-.text-serv2{
-    position: absolute;
-    width: 340px;
-    height: 110px;
-    border-bottom-left-radius: 8%;
-    border-bottom-right-radius: 8%;
-    background-color: white;
-    justify-content: center;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    margin: auto;
-}
-.text-serv1 h3{
+
+.text-serv1 h3,
+.text-serv2 h3 {
     font-family: 'Baskervville', serif;
     font-style: italic;
     font-size: 17px;
-    text-align: center;
     padding-top: 10px;
 }
-.text-serv2 h3{
-    font-family: 'Baskervville', serif;
-    font-style: italic;
-    font-size: 17px;
-    text-align: center;
-    padding-top: 10px;
-}
-.text-serv1 p{
+
+.text-serv1 p,
+.text-serv2 p {
     font-family: 'Arimo', sans-serif;
     font-size: 12px;
     font-style: italic;
-    text-align: center;
-    justify-content: center;
-    padding: 20px; 
-}
-.text-serv2 p{ 
-    font-family: 'Arimo', sans-serif;
-    font-size: 12px;
-    font-style: italic;
-    text-align: center;
-    justify-content: center;
-    padding: 20px; 
-    
-}
-.contenido-servicios .servicio1:hover{
-    background-color: #fff;
-    opacity: 80%;
-    cursor: pointer;
-    transition: 0.1s;
-    width: 340px;
-    height: 292px;
-    border-radius: 8%;
-    
+    padding: 20px;
 }
 
-.contenido-servicios .servicio2:hover .text-serv2{
+.contenido-servicios .servicio1:hover .text-serv1,
+.contenido-servicios .servicio2:hover .text-serv2 {
     opacity: 1;
-    transform: translateY(-110px);
-    -webkit-transform: translateY(-110px);
-    transition: 1s;
-}
-.contenido-servicios .servicio2:hover{
-    background-color: #fff;
-    opacity: 80%;
-    cursor: pointer;
-    transition: 0.1s;
-    width: 340px;
-    height: 292px;
-    border-radius: 8%;
-    
-}
-
-.contenido-servicios .servicio1:hover .text-serv1{
-    opacity: 1;
-    transform: translateY(-110px);
-    -webkit-transform: translateY(-110px);
-    transition: 1s;
+    transform: translateY(0);
 }
 
 .botonserv {
@@ -330,13 +266,13 @@ p{
     opacity: 55%;
     position: relative;
     margin-top: 30px;
-
 }
 
 .botonserv .servicios-button:hover {
     background-color: rgb(247, 194, 212);
     opacity: 90%;
 }
+
 
 /*---------NOVIAS-----------*/
 
