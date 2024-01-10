@@ -621,6 +621,9 @@ p{
     justify-content: center;
     position: relative;
 }
+.form{
+    width: 600px;
+}
 
 .input-group {
     width: 100%;
@@ -654,7 +657,6 @@ label {
     font-weight: 300;
     margin-bottom: 5px;
     display: block;
-    width: 400px;
 }
 
 #enviar {
