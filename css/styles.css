@@ -654,6 +654,7 @@ label {
     font-weight: 300;
     margin-bottom: 5px;
     display: block;
+    width: 400px;
 }
 
 #enviar {
