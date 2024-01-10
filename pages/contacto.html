@@ -4,26 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto: Aura Studio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/3d500b7072.js" crossorigin="anonymous"></script>
 </head>
 <!--------Comienza el HEADER------------------------------->
 <body>
-    <header id="header">
-        <div class="logo" href="#">
-            <img src="../Images/logonegro.png">
-        </div>
-
-        <nav class="navbar">
-            <ul class="nav-links">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="historia.html">Historia</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="novias.html">Novias</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
+    <header id="header" class="mb-3">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="../Images/logonegro.png" alt="Logo" class="img-fluid">
+                </a>
+            
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="historia.html">Historia</a></li>
+                        <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="novias.html">Novias</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-    </header> 
+    </header>
     <!--------Fin del HEADER------------------------------->
 
 <!--------Comienza seccion contacto-------------------->
@@ -92,15 +104,19 @@
 
 </main>
 <!--------FOOTER------------------------------->
-<footer class="footer">
-    <div class="footer-content">
-        <h2>Seguinos en redes:</h2>
-        <div class="redes">
-            <a href=”#”><i class="fa-brands fa-square-facebook"></i></a>
-            <a href=”#”><i class="fa-brands fa-instagram"></i></i></a>
-
-            <h3>DIRECCIÓN 1234 - MONTEVIDEO, UY<br>
-                TEL. 099 123 456</h3>
+<footer class="footer bg-light">
+    <div class="container text-center">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+                <h2>Seguinos en redes:</h2>
+                <div class="redes">
+                    <a href="#" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="col-md-12 mt-3">
+                <h3>DIRECCIÓN 1234 - MONTEVIDEO, UY<br>TEL. 099 123 456</h3>
+            </div>
         </div>
     </div>
 </footer>
