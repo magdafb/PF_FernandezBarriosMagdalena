@@ -586,6 +586,7 @@ p{
     border-radius: 5%;
     margin-top: 20px;
     order: 2;
+    justify-content: left;
 }
 
 .subtitulo-contacto {
