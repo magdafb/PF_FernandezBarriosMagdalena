@@ -39,37 +39,42 @@
     <!--------Fin del HEADER------------------------------->
 
 <!--------Comienza seccion servicios-------------------->
-<main class="container">
-    <section id="servicios" class="py-4">
-        <h1 class="titulo-servicios">Nuestros servicios</h1>
-        <h2 class="subtitulo-servicios">Contamos con dos opciones para tu día especial:</h2>
-    </section>
+<div class="container">
+    <main>
+        <section id="servicios">
+            <h1 class="titulo-servicios">Nuestros servicios</h1>
+            <h2 class="subtitulo-servicios">Contamos con dos opciones para tu día especial:</h2>
+        </section>
 
-    <div class="row justify-content-center">
-        <div class="col-md-6 col-lg-4 mb-4">
-            <div class="servicio1"><img src="../Images/amedida.jpg">
-                <div class="text-serv1">
-                    <h3>A medida</h3>
-                    <p class="textoservicio1">Tu vestido tal cual lo imaginaste, trabajaremos<br>
-                    juntas para llevar tu sueño a la realidad.</p>
-                  </div>
+        <div class="row justify-content-center"><!-- Bootstrap row class -->
+            <div class="contenido-servicios col-md-6 col-lg-4"><!-- Bootstrap col class -->
+                <div class="servicio1">
+                    <img src="../Images/amedida.jpg">
+                    <div class="text-serv1">
+                        <h3>A medida</h3>
+                        <p class="textoservicio1">Tu vestido tal cual lo imaginaste, trabajaremos<br>
+                            juntas para llevar tu sueño a la realidad.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contenido-servicios col-md-6 col-lg-4"><!-- Bootstrap col class -->
+                <div class="servicio2">
+                    <img src="../Images/listoparausar.avif">
+                    <div class="text-serv2">
+                        <h3>Listo para usar</h3>
+                        <p class="textoservicio2">Contamos con una colección de vestidos Listos para Usar.
+                            Cada pieza es única y<br> las puedes ver en nuestro local con agenda previa.</p>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="col-md-6 col-lg-4 mb-4">
-            <div class="servicio2"><img src="../Images/listoparausar.avif">
-                <div class="text-serv2">
-                    <h3>Listo para usar</h3>
-                    <p class="textoservicio2">Contamos con una colección de vestidos Listos para Usar.
-                        Cada pieza es única y<br> las puedes ver en nuestro local con agenda previa.</p>
-                  </div>
-            </div>
-        </div>
-    </div>
 
-    <div class="botonserv text-center">
-        <button type="button" class="servicios-button">Agenda una entrevista</button>
-    </div>
-</main>
+        <div class="botonserv">
+            <button type="button" class="servicios-button">Agenda una entrevista</button>
+        </div>
+    </main>
+</div>
 
 <!--------FOOTER------------------------------->
 <footer class="footer bg-light">
