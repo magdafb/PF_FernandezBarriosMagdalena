@@ -25,6 +25,11 @@ main {
     justify-content: space-between;
     padding: 5px 10%;
 }
+@media (min-width: 768px) {
+        .full-width-div {
+            width: 100%;
+        }
+    }
 
 .navbar-brand {
     cursor: pointer;
