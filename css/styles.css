@@ -187,14 +187,6 @@ p{
     line-height: normal;
 }
 
-.contenido-servicios {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; 
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-}
 
 .servicio1 img,
 .servicio2 img {
@@ -205,15 +197,9 @@ p{
 
 .text-serv1,
 .text-serv2 {
-    position: absolute;
-    width: 340px; 
-    height: 110px;
-    border-bottom-left-radius: 8%;
-    border-bottom-right-radius: 8%;
     background-color: white;
     justify-content: center;
     align-items: center;
-    opacity: 0;
     margin: auto;
 }
 
@@ -221,9 +207,10 @@ p{
 .text-serv2 h3 {
     font-family: 'Baskervville', serif;
     font-style: italic;
-    font-size: 17px;
+    font-size: 20px;
     text-align: center;
     padding-top: 10px;
+    margin-bottom: 10px;
 }
 
 .text-serv1 p,
@@ -236,19 +223,6 @@ p{
     padding: 20px;
 }
 
-.contenido-servicios .servicio1:hover,
-.contenido-servicios .servicio2:hover {
-    background-color: #fff;
-    opacity: 80%;
-    cursor: pointer;
-    transition: 0.1s;
-    border-radius: 8%;
-}
-
-.contenido-servicios .text-serv1,
-.contenido-servicios .text-serv2 {
-    transition: 1s;
-}
 
 .botonserv {
     display: flex;
