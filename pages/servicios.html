@@ -14,26 +14,28 @@
 <!--------Comienza el HEADER------------------------------->
 <body>
     <header id="header" class="mb-3">
-        <nav class="navbar navbar-expand-lg navbar-light bg-white">
-            <div class="container">
+        <nav class="navbar navbar-expand-lg justify-content-between navbar-light bg-white w-100">
+            <div>
                 <a class="navbar-brand" href="#">
                     <img src="../Images/logonegro.png" alt="Logo" class="img-fluid">
                 </a>
-            
+            </div>      
+            <!-- PONERLE w-100 SOLO PARA DESKTOP A ESTE DIV -->
+            <div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                </button>
-            
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="historia.html">Historia</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Servicios</a></li>
-                        <li class="nav-item"><a class="nav-link" href="novias.html">Novias</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
-                    </ul>
-                </div>
-            </div>
+                </button>               
+                
+            </div>  
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="historia.html">Historia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="novias.html">Novias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div> 
         </nav>
     </header>
     <!--------Fin del HEADER------------------------------->
@@ -46,10 +48,12 @@
             <h2 class="subtitulo-servicios">Contamos con dos opciones para tu día especial:</h2>
         </section>
 
-        <div class="row justify-content-center">
-            <div class="contenido-servicios col-md-6 col-lg-4">
-                <div class="servicio1">
-                    <img src="../Images/amedida.jpg">
+        <div class="row">
+            <div class="contenido-servicios col-md-4 col-lg-6 mb-3 mb-sm-0">
+                <div class="servicio1 text-center">
+                    <div>
+                        <img src="../Images/amedida.jpg">
+                    </div>                    
                     <div class="text-serv1">
                         <h3>A medida</h3>
                         <p class="textoservicio1">Tu vestido tal cual lo imaginaste, trabajaremos<br>
@@ -58,9 +62,11 @@
                 </div>
             </div>
 
-            <div class="contenido-servicios col-md-6 col-lg-4">
-                <div class="servicio2">
-                    <img src="../Images/listoparausar.avif">
+            <div class="contenido-servicios col-md-4 col-lg-6">
+                <div class="servicio2 text-center">
+                    <div>
+                        <img src="../Images/listoparausar.avif">
+                    </div>                     
                     <div class="text-serv2">
                         <h3>Listo para usar</h3>
                         <p class="textoservicio2">Contamos con una colección de vestidos Listos para Usar.
