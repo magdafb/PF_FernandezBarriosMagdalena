@@ -186,20 +186,55 @@ p{
     font-weight: 400;
     line-height: normal;
 }
+.contenido-servicios{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    
+}
 
+.servicio1 img{
+    width: 340px;
+    height: 292px;
+    flex-shrink: 0;
+    border-radius: 8%;
 
-.servicio1 img,
-.servicio2 img {
+}
+.servicio2 img{
     width: 340px;
     height: 292px;
     border-radius: 8%;
 }
 
-.text-serv1,
-.text-serv2 {
+.text-serv1{
+    position: absolute;
+    width: 340px;
+    height: 110px;
+    border-bottom-left-radius: 8%;
+    border-bottom-right-radius: 8%;
     background-color: white;
     justify-content: center;
     align-items: center;
+    justify-content: center;
+    opacity: 0;
+    margin: auto;
+    
+    
+}
+.text-serv2{
+    position: absolute;
+    width: 340px;
+    height: 110px;
+    border-bottom-left-radius: 8%;
+    border-bottom-right-radius: 8%;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
     margin: auto;
 }
 
@@ -210,11 +245,15 @@ p{
     font-size: 20px;
     text-align: center;
     padding-top: 10px;
-    margin-bottom: 10px;
 }
-
-.text-serv1 p,
-.text-serv2 p {
+.text-serv2 h3{
+    font-family: 'Baskervville', serif;
+    font-style: italic;
+    font-size: 17px;
+    text-align: center;
+    padding-top: 10px;
+}
+.text-serv1 p{
     font-family: 'Arimo', sans-serif;
     font-size: 12px;
     font-style: italic;
@@ -222,9 +261,51 @@ p{
     justify-content: center;
     padding: 20px;
 }
+.text-serv2 p{ 
+    font-family: 'Arimo', sans-serif;
+    font-size: 12px;
+    font-style: italic;
+    text-align: center;
+    justify-content: center;
+    padding: 20px; 
+    
+}
+.contenido-servicios .servicio1:hover{
+    background-color: #fff;
+    opacity: 80%;
+    cursor: pointer;
+    transition: 0.1s;
+    width: 340px;
+    height: 292px;
+    border-radius: 8%;
+    
+}
 
+.contenido-servicios .servicio2:hover .text-serv2{
+    opacity: 1;
+    transform: translateY(-110px);
+    -webkit-transform: translateY(-110px);
+    transition: 1s;
+}
+.contenido-servicios .servicio2:hover{
+    background-color: #fff;
+    opacity: 80%;
+    cursor: pointer;
+    transition: 0.1s;
+    width: 340px;
+    height: 292px;
+    border-radius: 8%;
+    
+}
 
-.botonserv {
+.contenido-servicios .servicio1:hover .text-serv1{
+    opacity: 1;
+    transform: translateY(-110px);
+    -webkit-transform: translateY(-110px);
+    transition: 1s;
+}
+
+.botonserv{
     display: flex;
     flex-direction: column;
     justify-content: center;
