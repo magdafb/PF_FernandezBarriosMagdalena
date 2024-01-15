@@ -1,6 +1,5 @@
 /* Google Fonts */
 @import "https://fonts.googleapis.com/css2?family=Arimo&family=Baskervville:ital@0;1&display=swap";
-
 * {
   margin: 0;
   padding: 0;
@@ -241,8 +240,7 @@ p {
   justify-content: center;
   align-items: center;
   margin: auto;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 80px;
   max-width: 800px;
   width: 100%;
 }
@@ -298,7 +296,8 @@ p {
   height: 350px;
   padding: 5px;
   gap: 5px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .contenido-novias .novia1 {
   position: relative;
@@ -658,6 +657,4 @@ h3 {
   .full-width-div {
     width: 100%;
   }
-}
-
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */
