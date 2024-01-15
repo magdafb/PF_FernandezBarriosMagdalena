@@ -22,9 +22,6 @@ main {
   justify-content: space-between;
   padding: 5px 10%;
 }
-#header .navbar-nav .nav-item .nav-link:hover {
-  color: rgb(247, 194, 212) !important;
-}
 
 .navbar-brand {
   cursor: pointer;
@@ -177,10 +174,13 @@ p {
   line-height: normal;
 }
 
-.servicio1 img {
-  width: 340px;
-  height: 292px;
-  border-radius: 8%;
+.contenido-servicios {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
 }
 
 .servicio2 img {
@@ -213,18 +213,23 @@ p {
 }
 
 .text-serv2 {
-  background-color: white;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
+    position: absolute;
+    width: 340px; 
+    height: 110px;
+    border-bottom-left-radius: 8%;
+    border-bottom-right-radius: 8%;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    margin: auto;
 }
 .text-serv2 h3 {
-  font-family: "Baskervville", serif;
-  font-style: italic;
-  font-size: 20px;
-  text-align: center;
-  padding-top: 10px;
-  margin-bottom: 10px;
+    font-family: 'Baskervville', serif;
+    font-style: italic;
+    font-size: 17px;
+    text-align: center;
+    padding-top: 10px;
 }
 .text-serv2 p {
   font-family: "Arimo", sans-serif;
@@ -233,6 +238,20 @@ p {
   text-align: center;
   justify-content: center;
   padding: 20px;
+}
+
+.contenido-servicios .servicio1:hover,
+.contenido-servicios .servicio2:hover {
+    background-color: #fff;
+    opacity: 80%;
+    cursor: pointer;
+    transition: 0.1s;
+    border-radius: 8%;
+}
+
+.contenido-servicios .text-serv1,
+.contenido-servicios .text-serv2 {
+    transition: 1s;
 }
 
 .botonserv {
@@ -473,19 +492,6 @@ p {
   gap: 20px;
   margin-top: 30px;
 }
-#contenido-contacto .row {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-#contenido-contacto .col-md-6 {
-  flex: 1;
-}
-#contenido-contacto .col-md-6 img {
-  display: block;
-  margin: 0 auto;
-}
 
 .texto-contacto {
   font-family: "Arimo", sans-serif;
@@ -527,19 +533,22 @@ p {
   text-transform: uppercase;
 }
 
+
 .contact-form {
-  width: 100%;
-  max-width: 700px;
-  margin: 0 auto;
-  padding: 0px;
+    width: 100%;
+    max-width: 500px;  
+    margin: 30px auto;
+    padding: 20px;
 }
 
+
 .input-group {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 500px;
-  margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px; 
+    margin: 0 auto;   
 }
 
 input {
