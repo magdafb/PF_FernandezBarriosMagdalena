@@ -175,64 +175,53 @@ p {
 	font-style: normal;
 	font-weight: 400;
 	line-height: normal;
+	
+@mixin servicio-image {
+	img {
+		width: 340px;
+		height: 292px;
+		border-radius: 8%;
+	}
 }
+
 .servicio1 {
-	img {
-		width: 340px;
-		height: 292px;
-		border-radius: 8%;
-	}
+	@include servicio-image;
 }
+
 .servicio2 {
-	img {
-		width: 340px;
-		height: 292px;
-		border-radius: 8%;
+	@include servicio-image;
+}
+@mixin text-service {
+	background-color: $background-color_4;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+
+	h3 {
+		font-family: $font-family_2;
+		font-style: italic;
+		font-size: 20px;
+		text-align: center;
+		padding-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	p {
+		font-family: $font-family_1;
+		font-size: 12px;
+		font-style: italic;
+		text-align: center;
+		justify-content: center;
+		padding: 20px;
 	}
 }
+
 .text-serv1 {
-	background-color: $background-color_4;
-	justify-content: center;
-	align-items: center;
-	margin: auto;
-	h3 {
-		font-family: $font-family_2;
-		font-style: italic;
-		font-size: 20px;
-		text-align: center;
-		padding-top: 10px;
-		margin-bottom: 10px;
-	}
-	p {
-		font-family: $font-family_1;
-		font-size: 12px;
-		font-style: italic;
-		text-align: center;
-		justify-content: center;
-		padding: 20px;
-	}
+	@include text-service;
 }
+
 .text-serv2 {
-	background-color: $background-color_4;
-	justify-content: center;
-	align-items: center;
-	margin: auto;
-	h3 {
-		font-family: $font-family_2;
-		font-style: italic;
-		font-size: 20px;
-		text-align: center;
-		padding-top: 10px;
-		margin-bottom: 10px;
-	}
-	p {
-		font-family: $font-family_1;
-		font-size: 12px;
-		font-style: italic;
-		text-align: center;
-		justify-content: center;
-		padding: 20px;
-	}
+	@include text-service;
 }
 .botonserv {
 	display: flex;
