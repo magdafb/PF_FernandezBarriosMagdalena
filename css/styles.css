@@ -488,6 +488,10 @@ p {
   margin-top: 30px;
 }
 
+#contenido-contacto .row{
+  align-items: center;
+}
+
 .texto-contacto {
   font-family: "Arimo", sans-serif;
   font-size: 15px;
