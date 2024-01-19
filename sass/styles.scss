@@ -201,27 +201,15 @@ p {
   }
 }
 
-// Styles for servicio1
-.servicio1 {
-  img {
+// Styles for servicios
+.img-servicios {
     width: 340px;
     height: 292px;
     border-radius: 8%;
-  }
-
+	
   @include text-service;
 }
 
-// Styles for servicio2
-.servicio2 {
-  img {
-    width: 340px;
-    height: 292px;
-    border-radius: 8%;
-  }
-
-  @include text-service;
-}
 
 .botonserv {
 	display: flex;
