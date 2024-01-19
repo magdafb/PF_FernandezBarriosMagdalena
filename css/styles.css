@@ -45,6 +45,12 @@ main {
   justify-content: right;
 }
 
+#inicio .container-fluid{
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .homepage {
   position: relative;
   height: 100vh;
