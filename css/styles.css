@@ -213,23 +213,18 @@ p {
 }
 
 .text-serv2 {
-    position: absolute;
-    width: 340px; 
-    height: 110px;
-    border-bottom-left-radius: 8%;
-    border-bottom-right-radius: 8%;
-    background-color: white;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    margin: auto;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
 }
 .text-serv2 h3 {
-    font-family: 'Baskervville', serif;
-    font-style: italic;
-    font-size: 17px;
-    text-align: center;
-    padding-top: 10px;
+  font-family: "Baskervville", serif;
+  font-style: italic;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 10px;
+  margin-bottom: 10px;
 }
 .text-serv2 p {
   font-family: "Arimo", sans-serif;
