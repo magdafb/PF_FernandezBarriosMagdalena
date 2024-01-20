@@ -27,6 +27,11 @@ main {
   cursor: pointer;
 }
 
+.img-fluid{
+  width: 60px;
+  height: 30px;
+}
+
 .navbar-nav {
   list-style: none;
   display: flex;
