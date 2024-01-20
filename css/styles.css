@@ -26,9 +26,6 @@ main {
 .navbar-brand {
   cursor: pointer;
 }
-.navbar-brand .img-fluid {
-  height: 70px;
-}
 
 .navbar-nav {
   list-style: none;
